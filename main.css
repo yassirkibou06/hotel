@@ -422,8 +422,8 @@ footer .logo h1 {
 }
 
 footer .content {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 footer h5 {
@@ -627,6 +627,43 @@ footer p {
     }
     /*---------------------*/
     /*Best Rooms end---------*/
+    /* service start */
+    .service .service-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service h1 {
+        font-size: 32px;
+    }
+    
+    .service p {
+        font-size: 14px;
+    }
+    
+    .service .service-content .content i {
+        font-size: 24px;
+    }
+    
+    .service .service-content .content h4 {
+        font-size: 16px;
+    }
+    
+    /* service end */
+    /* visit start */ 
+    .visit h2 {
+        font-size: 32px;
+    }
+    /* visit end */
+    /* footer start */
+    footer .content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        justify-items: center;
+    }
+
+    footer .content .col:last-of-type {
+        text-align: center;
+    }
 
 }
 
@@ -687,6 +724,28 @@ footer p {
     }
     /*---------------------*/
     /*Best Rooms end---------*/
+    /* service start */
+    .service .service-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .service h1 {
+        font-size: 36px;
+    }
+    
+    .service p {
+        font-size: 14px;
+    }
+    
+    .service .service-content .content i {
+        font-size: 24px;
+    }
+    
+    .service .service-content .content h4 {
+        font-size: 16px;
+    }
+    
+    /* service end */
 }
 
 /* Large devices (desktops, 768px and up) */
